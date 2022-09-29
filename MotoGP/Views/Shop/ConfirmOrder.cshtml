@@ -1,0 +1,7 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Confirmation";
+}
+
+<p>Thank you for ordering tickets for the race. Your booking is registered on @DateTime.Now.ToString("MM/dd/yyyy") . We will send the tickets as soon as possible.</p>
+<a asp-controller="Home" asp-action="Menu">Back</a>

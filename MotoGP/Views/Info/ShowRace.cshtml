@@ -1,0 +1,13 @@
+﻿@model MotoGP.Models.Race
+@using System.Globalization
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    string Title = "Race - " + Model.Name.ToString();
+    ViewData["Title"] = Title;
+    CultureInfo ci = new CultureInfo("en-US");
+}
+<h2>@Html.DisplayFor(model => model.Date) - @Html.DisplayFor(model => model.Name)</h2>
+<img src="~/images/races/@(Model.RaceID.ToString()).jpg"/>
+<p>@Html.DisplayFor(model => model.Description)</p>
+
+<p><a asp-controller="Home" asp-action="Menu">Back</a> | <a asp-controller="Info" asp-action="BuildMap">Races on map</a> | <a asp-controller="Info" asp-action="SelectRace">One by one</a></p>

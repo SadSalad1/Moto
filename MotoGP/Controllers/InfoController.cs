@@ -25,9 +25,21 @@ namespace MotoGP.Controllers
         public IActionResult BuildMap()
         {
             var races = _context.Races.OrderBy(r => r.Name);
-            ViewData["Races"] = races;
             ViewData["BannerNr"] = 0;
             return View(races.ToList());
+        }
+        public IActionResult ShowRace(int id)
+        {
+            ViewData["BannerNr"] = 0;
+            var race = _context.Races.FirstOrDefault(r => r.RaceID == id);
+            return View(race);
+        }
+        public IActionResult ListRiders()
+        {
+            ViewData["BannerNr"] = 1;
+            var riders = _context.Riders.OrderBy(r => r.Number);
+            return View(riders.ToList());
+
         }
     }
 }

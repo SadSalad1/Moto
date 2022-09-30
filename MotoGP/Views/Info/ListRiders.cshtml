@@ -3,6 +3,30 @@
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
     ViewData["Title"] = "Riders";
+    int teller = 1;
     CultureInfo ci = new CultureInfo("en-US");
 }
 
+<table>
+    <tr>
+        @foreach (var item in Model)
+        {
+            
+            <th style="background-color:gray">
+                <img src="~/images/riders/@(item.Number).jpg" />
+                <br />
+                <img src="~/images/flags/@(item.CountryID).png" />
+                @item.Number
+                <br />
+                @item.FirstName " " @item.LastName
+            </th>
+            <br />
+            if (teller==3)
+            {
+                teller = 0;
+    <tr>
+    </tr>
+            }
+            teller++;
+        }
+</table>

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XrOOx3avCzaouOZLEgLv3/BqZF06QmtsS56737uO4EKSoN3P74TTNi0dQJ2WqAx9XpEfCWCAvZ+YOvbxNNdJyA==",
+  "dgSpecHash": "3IskTkLDgmoYMUTpHSNqwaQMXhr51wJyowbzfFXICM0clbJV8osUgRauTWG9Dct5BVi82vAZOvnXTrad5yBuhA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\gebruiker\\Documents\\2022-2023 School\\DOTNET\\www\\MotoGP\\MotoGP\\MotoGP.csproj",
+  "projectFilePath": "C:\\Users\\gebruiker\\Documents\\2022-2023 School\\DOTNET\\www\\MotoGP\\Moto\\MotoGP\\MotoGP.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\gebruiker\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\gebruiker\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\6.0.9\\microsoft.aspnetcore.cryptography.internal.6.0.9.nupkg.sha512",
